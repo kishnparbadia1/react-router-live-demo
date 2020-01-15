@@ -1,6 +1,6 @@
 .App {
-  text-align: center;
-  font-size: 1.5rem;
+  margin: 1rem;
+  font-size: 1.25rem;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,7 +24,7 @@ h1 {
   display: block;
 }
 
-a {
+nav a {
   color: white;
 }
 
@@ -37,4 +37,12 @@ img {
   height: 100%;
   width: 100%;
   object-fit: contain;
+  max-width: 50%;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
