@@ -18,10 +18,10 @@ function App() {
       </nav>
       <Home />
       <Switch>
-        <Route path="/browserrouter" render={() => (<BrowserRouter />)} />
-        <Route path="/link" render={() => (<LinkNavLink />)} />
-        <Route path="/switch-route" render={() => (<SwitchRoute />)} />
-        <Route exact path="/" render={() => (<Home />)} />
+        <Route path="/browserrouter" component={BrowserRouter} />
+        <Route path="/link" component={LinkNavLink} />
+        <Route path="/switch-route" component={SwitchRoute} />
+        <Route exact path="/" component={Home} />
       </Switch>
     </div>
   );
