@@ -8,6 +8,9 @@
   background-color: rgb(136, 187, 189);
   height: 5rem;
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .container {
@@ -27,5 +30,11 @@ a {
 
 img {
   height: 600px;
+  object-fit: contain;
+}
+
+.react-logo {
+  height: 100%;
+  width: 100%;
   object-fit: contain;
 }

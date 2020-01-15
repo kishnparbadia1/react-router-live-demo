@@ -1,16 +1,27 @@
 import React from 'react';
-import './App.css';
-import ItemContainer from './itemContainer'
 import {Switch, Link, Route} from 'react-router-dom';
+import './App.css';
+import Home from './Home'
+import Router from './Router'
+import LinkNavLink from './LinkNavLink';
+import SwitchRoute from './SwitchRoute';
+
 
 function App() {
   return (
     <div className="App">
       <nav className="nav">
-        <Link to="/travel">Navigate to travel</Link>
+        <Link to="/">Home</Link>
+        <Link to="/router">Router</Link>
+        <Link to="/link">Link / NavLink</Link>
+        <Link to="/switch-route">Switch / Route</Link>
       </nav>
+      <Home />
       <Switch>
-        <Route path="/travel" render={() => (<ItemContainer />)} />
+        <Route path="/router" render={() => (<Router />)} />
+        <Route path="/link" render={() => (<LinkNavLink />)} />
+        <Route path="/switch-route" render={() => (<SwitchRoute />)} />
+        <Route exact path="/" render={() => (<Home />)} />
       </Switch>
     </div>
   );
