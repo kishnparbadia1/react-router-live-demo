@@ -4,7 +4,9 @@ function BrowserRouter() {
     return (
         <div>
             <h1>Browser Router</h1>
-            <p>A `Router` that uses the HTML5 history API (pushState, replaceState and the popstate event) to keep your UI in sync with the URL.</p>
+            <p>It needs to be the parent of everything.</p>
+            <p>When the url changes, the Router will make sure the expected component is displayed</p>
+            <img src="/browserrouter.png" alt="screenshot browser router" />
         </div>
     )
 }
