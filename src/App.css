@@ -81,3 +81,20 @@ h1, h2, h3 {
   color: rgba(0, 0, 0, 0.646);
   margin-bottom: 2rem;
 }
+
+button {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  width: 10rem;
+  justify-content: right;
+  font-size: 1.25rem;
+}
+
+button:hover{
+  background-color: rgb(136, 187, 189);
+}
+
+a:visited {
+  color: rgba(0, 0, 0, 0.646);
+}
