@@ -16,7 +16,6 @@ function App() {
         <Link to="/link">Link / NavLink</Link>
         <Link to="/switch-route">Switch / Route</Link>
       </nav>
-      <Home />
       <Switch>
         <Route path="/browserrouter" component={BrowserRouter} />
         <Route path="/link" component={LinkNavLink} />
