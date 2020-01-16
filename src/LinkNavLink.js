@@ -9,6 +9,7 @@ function LinkNavLink() {
         <li>It provides accessible navigation around your application.</li>
         <li>It has a `to` propery, the most commonly used is `to: string`</li>
       </ul>
+      <img src="/link.png" alt="Link code snippet"></img>
       <h2>Nav Link</h2>
       <ul>
         <li>It is a special version of the Link tag.</li>
@@ -18,6 +19,7 @@ function LinkNavLink() {
           the current URL.
         </li>
       </ul>
+      <img src="/navlink.png" alt="NavLink code snippet"></img>
     </div>
   );
 }

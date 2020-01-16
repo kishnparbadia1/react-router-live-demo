@@ -5,6 +5,7 @@ function SwitchRoute() {
     <div className="container">
       <h1>Switch & Route</h1>
       <h2>Switch</h2>
+      
       <ul>
         <li>It renders the first child `Route` that matches the location.</li>
         <li>
@@ -12,16 +13,16 @@ function SwitchRoute() {
           `Route` that matches the location renders inclusively.
         </li>
       </ul>
+
       <h2>Route</h2>
       <p>
         It's responsability is to render some UI when its path matches the
         current URL.
       </p>
-      <p>Route render methods</p>
+      <p>Route render methods:</p>
       <ul>
         <li>Route component</li>
         <li>Route render</li>
-        <li>Route children function</li>
       </ul>
 
       <h3>Route component</h3>
@@ -29,9 +30,8 @@ function SwitchRoute() {
         A React component to render only when the location matches. It will be
         rendered with `route props`.
       </p>
-
       <h3>Route render</h3>
-      <h3>Route children function</h3>
+      <p>You can pass in a function to be called when the location matches.</p>
     </div>
   );
 }
