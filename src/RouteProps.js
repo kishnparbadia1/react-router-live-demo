@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function RouteProps(props) {
-  const [Dessert, setDessert] = useState('');
+  const [dessert, setDessert] = useState('');
   return (
     <div className="container">
       <h1>Route Props</h1>
@@ -24,8 +24,8 @@ function RouteProps(props) {
       </ul>
       <img src="/match.png" alt="match code snippet"></img>
 
-      <select onChange={() => alert()}>
-        <option value="1">Chocolate mousse</option>
+      <select onChange={(e) => setDessert(e.target.value)}>
+        <option>Chocolate mousse</option>
         <option>Madeleine</option>
         <option>Macaroon</option>
         <option>Cookies</option>
