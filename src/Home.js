@@ -8,8 +8,9 @@ function Home() {
       <img src="react-router.jpg" alt="react-router logo" />
       <div className="home-links">
         <Link to="/browserrouter">Browswer Router</Link>
-        <Link to="/link">Link and NavLink</Link>
-        <Link to="/switch-route">Switch and Route</Link>
+        <Link to="/link">Link & NavLink</Link>
+        <Link to="/switch-route">Switch & Route</Link>
+        <Link to="/route-props">Route props</Link>
       </div>
     </div>
   );
