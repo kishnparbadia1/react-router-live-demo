@@ -2,7 +2,7 @@ import React from "react";
 
 function SwitchRoute() {
   return (
-    <div>
+    <div className="container">
       <h1>Switch and Route</h1>
       <h2>Switch</h2>
         <p>It renders the first child `Route` that matches the location.</p>

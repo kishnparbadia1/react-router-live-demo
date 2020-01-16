@@ -2,7 +2,7 @@ import React from 'react';
 
 function LinkNavLink() {
     return(
-        <div>Hello from link</div>
+        <div className="container">Hello from link</div>
     )
 }
 
