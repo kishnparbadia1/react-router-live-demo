@@ -1,6 +1,6 @@
 import React from "react";
 
-function RouteProps() {
+function RouteProps(props) {
   return (
     <div className="container">
       <h1>Route Props</h1>
@@ -21,12 +21,19 @@ function RouteProps() {
           the url parameters.
         </li>
       </ul>
+      <img src="/match.png" alt="match code snippet"></img>
 
       <h2>Location</h2>
       <p>
         It represents where the app is now, where you want it to go, or even
         where it was.
       </p>
+
+      <h2>History</h2>
+      <p>It is used to manipulate browser's history programmatically.</p>
+      <p>You can programmatically navigate using `history.push`.</p>
+      <img src="/history.png" alt="history code snippet"></img>
+      <button onClick={() => props.history.push('/')}>Go Home</button>
     </div>
   );
 }
