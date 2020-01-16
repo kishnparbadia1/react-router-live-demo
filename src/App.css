@@ -10,7 +10,7 @@
 .nav {
   background-color: rgb(136, 187, 189);
   height: 5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,6 +26,7 @@ nav a {
   flex-direction: column;
   max-width: 48rem;
   margin: auto;
+  margin-bottom: 3rem;;
 }
 
 h1 {
@@ -38,6 +39,8 @@ img {
   width: 100%;
   height: 100%;
   margin-bottom: 1em;
+  border-radius: .6rem;
+  box-shadow: 10px 10px 5px lightgrey;
 }
 
 .home-links {
@@ -70,4 +73,11 @@ h1, h2, h3 {
 
 .nav-selected {
   font-weight: 800;
+}
+
+.app-title {
+  align-self: center;
+  font-size: 4.5rem;
+  color: rgba(0, 0, 0, 0.646);
+  margin-bottom: 2rem;
 }
