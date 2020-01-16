@@ -21,6 +21,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a:visited {
+  color:white;
+}
+
 .container {
   display: flex;
   flex-direction: column;

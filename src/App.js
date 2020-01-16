@@ -7,6 +7,7 @@ import LinkNavLink from './LinkNavLink';
 import SwitchRoute from './SwitchRoute';
 import Resources from './Resources';
 import RouteProps from './RouteProps'
+import FavoriteDesert from './FavoriteDessert';
 
 
 function App() {
@@ -15,8 +16,9 @@ function App() {
       <nav className="nav">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/browserrouter" activeClassName="nav-selected">Browser Router</NavLink>
-        <NavLink to="/link" activeClassName="nav-selected">Link / NavLink</NavLink>
-        <NavLink to="/switch-route" activeClassName="nav-selected">Switch / Route</NavLink>
+        <NavLink to="/link" activeClassName="nav-selected">Link & NavLink</NavLink>
+        <NavLink to="/switch-route" activeClassName="nav-selected">Switch & Route</NavLink>
+        <NavLink to="/route-props" activeClassName="nav-selected">Route Props</NavLink>
         <NavLink to="/resources" activeClassName="nav-selected">Resources</NavLink>
       </nav>
       <Switch>
@@ -25,6 +27,7 @@ function App() {
         <Route path="/switch-route" component={SwitchRoute} />
         <Route path="/resources" component={Resources} />
         <Route path="/route-props" component={RouteProps} />
+        <Route path="/favoritedessert/:dessertId" component={FavoriteDesert} />
         <Route exact path="/" component={Home} />
       </Switch>
     </div>
