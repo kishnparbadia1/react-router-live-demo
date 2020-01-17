@@ -22,21 +22,24 @@ function RouteProps(props) {
         </li>
       </ul>
       <img src="/match.png" alt="match code snippet"></img>
-      <div>What's your favorite dessert?</div>
-      <select
-        onChange={e => {
-          if (e.target.value > 0) {
-            props.history.push(`/favoritedessert/${e.target.value}`);
-          }
-        }}
-      >
-        <option value="0">- - -</option>
-        <option value="1">Chocolate mousse</option>
-        <option value="2">Madeleine</option>
-        <option value="3">Macaroon</option>
-        <option value="4">Cookies</option>
-        <option value="5">Apple pie</option>
-      </select>
+      <div className="example">Example
+      
+        <div>What's your favorite dessert?</div>
+        <select
+          onChange={e => {
+            if (e.target.value > 0) {
+              props.history.push(`/favoritedessert/${e.target.value}`);
+            }
+          }}
+        >
+          <option value="0">- - -</option>
+          <option value="1">Chocolate mousse</option>
+          <option value="2">Madeleine</option>
+          <option value="3">Macaroon</option>
+          <option value="4">Cookies</option>
+          <option value="5">Apple pie</option>
+        </select>
+      </div>
 
       <h2>Location</h2>
       <p>
@@ -54,10 +57,12 @@ function RouteProps(props) {
       <li>You can programmatically navigate using `history.push`.</li>
       <li>It has 'go back' and 'go forward' methods.</li>
       <img src="/history.png" alt="history code snippet"></img>
-      <button onClick={() => props.history.push("/")}>Go Home</button>
+      <div className="example">Example
+      <button onClick={() => props.history.push("/")}>Go Home</button></div>
       <h2>Documentation</h2>
       <a
         href="https://reacttraining.com/react-router/web/api/Route/route-props"
+        rel="noopener noreferrer"
         target="_blank"
       >
         React Training, Route Props

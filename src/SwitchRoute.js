@@ -33,6 +33,10 @@ function SwitchRoute() {
       </p>
       <h3>Route render</h3>
       <p>You can pass in a function to be called when the location matches. Whatever the function returns is rendered.</p>
+      <img src="/switch-route.png" alt="switch-route code snippet" />
+      <h2>Documentation</h2>
+      <a href="https://reacttraining.com/react-router/web/api/Switch" target="_blank" rel="noopener noreferrer">React training - Switch</a>
+      <a href="https://reacttraining.com/react-router/web/api/Route" target="_blank" rel="noopener noreferrer">React training - Route</a>
     </div>
   );
 }
