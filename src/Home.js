@@ -4,12 +4,11 @@ import { Link } from 'react-router-dom'
 function Home() {
   return (
     <div className='container'>
-      <h1 className="app-title">React Router</h1>
       <img src="react-router.jpg" alt="react-router logo" />
       <div className="home-links">
-        <Link to="/browserrouter">Browswer Router</Link>
-        <Link to="/link">Link & NavLink</Link>
+        <Link to="/browserrouter">Browser Router</Link>
         <Link to="/switch-route">Switch & Route</Link>
+        <Link to="/link">Link & NavLink</Link>
         <Link to="/route-props">Route props</Link>
       </div>
     </div>

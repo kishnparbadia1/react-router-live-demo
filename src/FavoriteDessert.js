@@ -1,6 +1,6 @@
 import React from "react";
 
-function FavoriteDesert(props) {
+function FavoriteDessert(props) {
   const myFavoriteDessert = {
     1: "https://images-gmi-pmc.edge-generalmills.com/fe558022-4544-458f-aaa0-eda0de1bcf99.jpg",
     2: "https://myfrenchrecipe.com/wp-content/uploads/2018/11/french-madeleine-honey-lemon-my-french-recipe.jpg",
@@ -17,4 +17,4 @@ function FavoriteDesert(props) {
   );
 }
 
-export default FavoriteDesert;
+export default FavoriteDessert;

@@ -16,22 +16,23 @@ function SwitchRoute() {
 
       <h2>Route</h2>
       <p>
-        It's responsability is to render some UI when its path matches the
+        It's responsibility is to render some UI when its path matches the
         current URL.
       </p>
       <p>Route render methods:</p>
       <ul>
+        <li>Children element</li>
         <li>Route component</li>
         <li>Route render</li>
       </ul>
-
+      <h3>Children element</h3>
       <h3>Route component</h3>
       <p>
         A React component to render only when the location matches. It will be
         rendered with `route props`.
       </p>
       <h3>Route render</h3>
-      <p>You can pass in a function to be called when the location matches.</p>
+      <p>You can pass in a function to be called when the location matches. Whatever the function returns is rendered.</p>
     </div>
   );
 }

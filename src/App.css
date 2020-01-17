@@ -79,13 +79,6 @@ h1, h2, h3 {
   font-weight: 800;
 }
 
-.app-title {
-  align-self: center;
-  font-size: 4.5rem;
-  color: rgba(0, 0, 0, 0.646);
-  margin-bottom: 2rem;
-}
-
 button {
   margin-top: 2rem;
   padding: 1rem;

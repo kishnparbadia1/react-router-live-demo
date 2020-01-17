@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 function RouteProps(props) {
-  const [dessert, setDessert] = useState('');
   return (
     <div className="container">
       <h1>Route Props</h1>
@@ -23,13 +22,20 @@ function RouteProps(props) {
         </li>
       </ul>
       <img src="/match.png" alt="match code snippet"></img>
-
-      <select onChange={(e) => setDessert(e.target.value)}>
-        <option>Chocolate mousse</option>
-        <option>Madeleine</option>
-        <option>Macaroon</option>
-        <option>Cookies</option>
-        <option>Apple pie</option>
+      <div>What's your favorite dessert?</div>
+      <select
+        onChange={e => {
+          if (e.target.value > 0) {
+            props.history.push(`/favoritedessert/${e.target.value}`);
+          }
+        }}
+      >
+        <option value="0">- - -</option>
+        <option value="1">Chocolate mousse</option>
+        <option value="2">Madeleine</option>
+        <option value="3">Macaroon</option>
+        <option value="4">Cookies</option>
+        <option value="5">Apple pie</option>
       </select>
 
       <h2>Location</h2>
@@ -37,12 +43,25 @@ function RouteProps(props) {
         It represents where the app is now, where you want it to go, or even
         where it was.
       </p>
+      <li>You can add custom data on to a location.</li>
+      <li>
+        Imutable, can be important in some lifecycle methods (as an example,
+        history.location is mutable).
+      </li>
 
       <h2>History</h2>
-      <p>It is used to manipulate browser's history programmatically.</p>
-      <p>You can programmatically navigate using `history.push`.</p>
+      <li>It is used to manipulate browser's history programmatically.</li>
+      <li>You can programmatically navigate using `history.push`.</li>
+      <li>It has 'go back' and 'go forward' methods.</li>
       <img src="/history.png" alt="history code snippet"></img>
-      <button onClick={() => props.history.push('/')}>Go Home</button>
+      <button onClick={() => props.history.push("/")}>Go Home</button>
+      <h2>Documentation</h2>
+      <a
+        href="https://reacttraining.com/react-router/web/api/Route/route-props"
+        target="_blank"
+      >
+        React Training, Route Props
+      </a>
     </div>
   );
 }
