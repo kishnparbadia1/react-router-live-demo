@@ -13,7 +13,13 @@ function BrowserRouter() {
       </ul>
       <img src="/browserrouter.png" alt="screenshot browser router" />
       <h2>Documentation</h2>
-      <a href="https://reacttraining.com/react-router/web/api/BrowserRouter" target="_blank" rel="noopener noreferrer">React training - Browser Router</a>
+      <a
+        href="https://reacttraining.com/react-router/web/api/BrowserRouter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        React training - Browser Router
+      </a>
     </div>
   );
 }

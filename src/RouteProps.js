@@ -22,8 +22,8 @@ function RouteProps(props) {
         </li>
       </ul>
       <img src="/match.png" alt="match code snippet"></img>
-      <div className="example">Example
-      
+      <div className="example">
+        Example
         <div>What's your favorite dessert?</div>
         <select
           onChange={e => {
@@ -57,8 +57,10 @@ function RouteProps(props) {
       <li>You can programmatically navigate using `history.push`.</li>
       <li>It has 'go back' and 'go forward' methods.</li>
       <img src="/history.png" alt="history code snippet"></img>
-      <div className="example">Example
-      <button onClick={() => props.history.push("/")}>Go Home</button></div>
+      <div className="example">
+        Example
+        <button onClick={() => props.history.push("/")}>Go Home</button>
+      </div>
       <h2>Documentation</h2>
       <a
         href="https://reacttraining.com/react-router/web/api/Route/route-props"
