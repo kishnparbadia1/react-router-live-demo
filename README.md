@@ -1,14 +1,22 @@
+# React Router (basics and beyond)
+
+You should be able to:
+- Use the URL bar to manage state and control navigation within a SPA using the `react-router-dom` library
+- Set up BrowserRouter in a parent component to handle routing
+- Swap views using Route components
+- Navigate to specific routes using Link components
+
+## Quickstart
+
+Chose the branch you want to clone - the final project is under the branch `final`
+- start point: project with no routing
+- step 1: project with `BrowserRouter`, `Switch` and `Route`
+- step 2: `Link` and `NavLink` added
+- step 3: route props: `history`, `location`, `params`
+
+```bash
+git clone
+cd react-router-live-demo
+npm install
 npm run start
-
-```js
-<Route path="/renderprop" render={() => {
-  alert('hey');
-  return <p>hey</p>
-}} />
 ```
-
-https://github.com/FullstackAcademy/1911-FSA-NY-WEB-FT/blob/master/01-junior-phase/15-react-router/react-router-201.pdf
-https://www.youtube.com/watch?v=M4YpUFePQvQ&feature=youtu.be
-
-https://github.com/FullstackAcademy/1911-FSA-NY-WEB-FT/blob/master/01-junior-phase/15-react-router/react-router-101.pdf
-https://www.youtube.com/watch?v=M4YpUFePQvQ&feature=youtu.be
