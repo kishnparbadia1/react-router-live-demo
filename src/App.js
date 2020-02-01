@@ -31,16 +31,13 @@ function App() {
         </NavLink>
       </nav>
       <Switch>
-        {/* recommended way of rendering components */}
-        <Route path="/browserrouter">
-          <BrowserRouter />
-        </Route>
+        <Route exact path="/" component={Home} />
+        <Route path="/browserrouter" component={BrowserRouter} />
         <Route path="/link" component={LinkNavLink} />
         <Route path="/switch-route" component={SwitchRoute} />
         <Route path="/resources" component={Resources} />
         <Route path="/route-props" component={RouteProps} />
         <Route path="/favoritedessert/:dessertId" component={FavoriteDessert} />
-        <Route exact path="/" component={Home} />
       </Switch>
     </div>
   );
