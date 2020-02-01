@@ -12,7 +12,8 @@ function BrowserRouter() {
           is displayed.
         </li>
       </ul>
-      <Highlight code={`import { BrowserRouter } from "react-router-dom";
+      <Highlight
+        code={`import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
     // all route sensitive code is wrapped into BrowserRouter
@@ -20,9 +21,34 @@ ReactDOM.render(
     <App />
   </BrowserRouter>,
   document.getElementById("root")
-);`} />
+);`}
+      />
+      <h2>Browser Router or Hash Router?</h2>
+      <ul>
+        <li>
+          Browser Router uses{" "}
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/History_API"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            history API
+          </a>{" "}
+          whichh is unavailable for legacy browsers.
+        </li>
+        <li>
+          Hash Router has no limitation on supported browser and its use cases
+          are not limited to SPA.
+        </li>
+      </ul>
       <h2>Documentation</h2>
-      <a href="https://reacttraining.com/react-router/web/api/BrowserRouter" target="_blank" rel="noopener noreferrer">React training - Browser Router</a>
+      <a
+        href="https://reacttraining.com/react-router/web/api/BrowserRouter"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        React training - Browser Router
+      </a>
     </div>
   );
 }
