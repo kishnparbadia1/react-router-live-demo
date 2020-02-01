@@ -1,4 +1,5 @@
 import React from "react";
+import { Highlight } from './Highlight'
 
 function SwitchRoute() {
   return (
@@ -36,7 +37,17 @@ function SwitchRoute() {
         You can pass in a function to be called when the location matches.
         Whatever the function returns is rendered.
       </p>
-      <img src="/switch-route.png" alt="switch-route code snippet" />
+      <Highlight
+        code={`<Switch>
+  <Route exact path="/" component={Home} />
+  <Route path="/browserrouter" component={BrowserRouter} />
+  <Route path="/link" component={LinkNavLink} />
+  <Route path="/switch-route" component={SwitchRoute} />
+  <Route path="/resources" component={Resources} />
+  <Route path="/route-props" component={RouteProps} />
+  <Route path="/favoritedessert/:dessertId" component={FavoriteDessert} />
+</Switch>`}
+      />
       <h2>Documentation</h2>
       <a
         href="https://reacttraining.com/react-router/web/api/Switch"

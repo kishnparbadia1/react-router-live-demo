@@ -1,4 +1,5 @@
 import React from "react";
+import { Highlight } from './Highlight'
 
 function RouteProps(props) {
   return (
@@ -56,7 +57,9 @@ function RouteProps(props) {
       <li>It is used to manipulate browser's history programmatically.</li>
       <li>You can programmatically navigate using `history.push`.</li>
       <li>It has 'go back' and 'go forward' methods.</li>
-      <img src="/history.png" alt="history code snippet"></img>
+      <Highlight code={`<div className="example">Example
+  <button onClick={() => props.history.push("/")}>Go Home</button>
+</div>`} />
       <div className="example">
         Example
         <button onClick={() => props.history.push("/")}>Go Home</button>

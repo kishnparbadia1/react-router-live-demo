@@ -1,4 +1,5 @@
 import React from "react";
+import { Highlight } from './Highlight'
 
 function BrowserRouter() {
   return (
@@ -11,7 +12,14 @@ function BrowserRouter() {
           is displayed.
         </li>
       </ul>
-      <img src="/browserrouter.png" alt="screenshot browser router" />
+      <Highlight code={`import { BrowserRouter } from "react-router-dom";
+ReactDOM.render(
+    // all route sensitive code is wrapped into BrowserRouter
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);`} />
       <h2>Browser Router or Hash Router?</h2>
       <ul>
         <li>Browser Router uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/History_API" target="_blank" rel="noopener noreferrer">history API</a> whichh is unavailable for legacy browsers.</li>
