@@ -1,4 +1,5 @@
 import React from "react";
+import { Highlight } from "./Highlight";
 
 function LinkNavLink() {
   return (
@@ -11,7 +12,12 @@ function LinkNavLink() {
         <li>It can also take an object as a property, the object properties would be passed to the `location` prop.</li>
         <li>It renders as an anchor tag.</li>
       </ul>
-      <img src="/link.png" alt="Link code snippet"></img>
+      <Highlight code={`<div className="home-links">
+  <Link to="/browserrouter">Browser Router</Link>
+  <Link to="/switch-route">Switch & Route</Link>
+  <Link to="/link">Link & NavLink</Link>
+  <Link to="/route-props">Route props</Link>
+</div>`} />
       <h2>Nav Link</h2>
       <ul>
         <li>It is a special version of the Link tag.</li>
@@ -21,7 +27,24 @@ function LinkNavLink() {
           the current URL. It adds a class.
         </li>
       </ul>
-      <img src="/navlink.png" alt="NavLink code snippet"></img>
+      <Highlight code={`<nav className="nav">
+  <NavLink to="/">Home</NavLink>
+  <NavLink to="/browserrouter" activeClassName="nav-selected">
+    Browser Router
+  </NavLink>
+  <NavLink to="/switch-route" activeClassName="nav-selected">
+    Switch & Route
+  </NavLink>
+  <NavLink to="/link" activeClassName="nav-selected">
+    Link & NavLink
+  </NavLink>
+  <NavLink to="/route-props" activeClassName="nav-selected">
+    Route Props
+  </NavLink>
+  <NavLink to="/resources" activeClassName="nav-selected">
+    Resources
+  </NavLink>
+</nav>`} />
     </div>
   );
 }

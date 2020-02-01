@@ -1,4 +1,5 @@
 import React from "react";
+import { Highlight } from "./Highlight";
 
 function BrowserRouter() {
   return (
@@ -11,7 +12,15 @@ function BrowserRouter() {
           is displayed.
         </li>
       </ul>
-      <img src="/browserrouter.png" alt="screenshot browser router" />
+      <Highlight code={`import { BrowserRouter } from "react-router-dom";
+
+ReactDOM.render(
+    // all route sensitive code is wrapped into BrowserRouter
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);`} />
       <h2>Documentation</h2>
       <a href="https://reacttraining.com/react-router/web/api/BrowserRouter" target="_blank" rel="noopener noreferrer">React training - Browser Router</a>
     </div>
