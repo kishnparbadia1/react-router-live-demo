@@ -2,6 +2,7 @@ import React from "react";
 import { Highlight } from "./Highlight";
 
 function RouteProps(props) {
+  console.log(props)
   return (
     <div className="container">
       <h1>Route Props</h1>
@@ -61,7 +62,7 @@ function RouteProps(props) {
   <button onClick={() => props.history.push("/")}>Go Home</button>
 </div>`} />
       <div className="example">Example
-        <button onClick={() => props.history.push("/")}>Go Home</button>
+        <button onClick={() => props.history.goBack()}>Go Back</button>
       </div>
       <h2>Documentation</h2>
       <a
