@@ -14,30 +14,30 @@ function App() {
     <div className="App">
       <nav className="nav">
         <NavLink to="/">Home</NavLink>
-        <NavLink to="/browserrouter" activeClassName="nav-selected">
+        <NavLink to="/page1" activeClassName="nav-selected">
           Browser Router
         </NavLink>
-        <NavLink to="/switch-route" activeClassName="nav-selected">
+        <NavLink to="/page2" activeClassName="nav-selected">
           Switch & Route
         </NavLink>
-        <NavLink to="/link" activeClassName="nav-selected">
+        <NavLink to="/page3" activeClassName="nav-selected">
           Link & NavLink
         </NavLink>
-        <NavLink to="/route-props" activeClassName="nav-selected">
+        <NavLink to="/page4" activeClassName="nav-selected">
           Route Props
         </NavLink>
-        <NavLink to="/resources" activeClassName="nav-selected">
+        <NavLink to="/page5" activeClassName="nav-selected">
           Resources
         </NavLink>
       </nav>
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route path="/browserrouter" component={BrowserRouter} />
-        <Route path="/link" component={LinkNavLink} />
-        <Route path="/switch-route" component={SwitchRoute} />
-        <Route path="/resources" component={Resources} />
-        <Route path="/route-props" component={RouteProps} />
-        <Route path="/favoritedessert/:dessertId" component={FavoriteDessert} />
+        <Route path="/page1" component={BrowserRouter} />
+        <Route path="/page2" component={LinkNavLink} />
+        <Route path="/page3" component={SwitchRoute} />
+        <Route path="/page4" component={Resources} />
+        <Route path="/page5" component={RouteProps} />
+        {/* <Route path="/favoritedessert/:dessertId" component={FavoriteDessert} /> */}
       </Switch>
     </div>
   );
