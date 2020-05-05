@@ -12,7 +12,6 @@ function FavoriteDessert(props) {
   return (
     <div className="container">
       <img src={myFavoriteDessert[props.match.params.dessertId]} alt="random desserts" className="favorite-dessert"></img>
-      <div></div>
     </div>
   );
 }
