@@ -33,10 +33,11 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/page1" component={BrowserRouter} />
-        <Route path="/page2" component={LinkNavLink} />
-        <Route path="/page3" component={SwitchRoute} />
-        <Route path="/page4" component={Resources} />
-        <Route path="/page5" component={RouteProps} />
+        <Route path="/page2" component={SwitchRoute} />
+        <Route path="/page3" component={LinkNavLink} />
+        <Route path="/page4" component={RouteProps} />
+        <Route path="/page5" component={Resources} />
+      
         {/* <Route path="/favoritedessert/:dessertId" component={FavoriteDessert} /> */}
       </Switch>
     </div>
