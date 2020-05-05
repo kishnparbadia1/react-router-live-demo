@@ -2,7 +2,7 @@ import React from "react";
 import { Highlight } from "./Highlight";
 
 function RouteProps(props) {
-  console.log(props)
+  console.log(props);
   return (
     <div className="container">
       <h1>Route Props</h1>
@@ -24,11 +24,11 @@ function RouteProps(props) {
         </li>
       </ul>
       <img src="/match.png" alt="match code snippet"></img>
-      <div className="example">Example
-      
+      <div className="example">
+        Example
         <div>What's your favorite dessert?</div>
         <select
-          onChange={e => {
+          onChange={(e) => {
             if (e.target.value > 0) {
               props.history.push(`/favoritedessert/${e.target.value}`);
             }
@@ -43,6 +43,18 @@ function RouteProps(props) {
         </select>
       </div>
 
+      <h2>History</h2>
+      <li>It is used to manipulate browser's history programmatically.</li>
+      <li>You can programmatically navigate using `history.push`.</li>
+      <li>It has 'go back' and 'go forward' methods.</li>
+      <Highlight
+        code={`<div className="example">Example
+  <button onClick={() => props.history.push("/")}>Go Home</button>
+</div>`}
+      />
+      <div className="back-button-example">
+        <button onClick={() => props.history.goBack()}>Go Back</button>
+      </div>
       <h2>Location</h2>
       <p>
         It represents where the app is now, where you want it to go, or even
@@ -53,17 +65,6 @@ function RouteProps(props) {
         Imutable, can be important in some lifecycle methods (as an example,
         history.location is mutable).
       </li>
-
-      <h2>History</h2>
-      <li>It is used to manipulate browser's history programmatically.</li>
-      <li>You can programmatically navigate using `history.push`.</li>
-      <li>It has 'go back' and 'go forward' methods.</li>
-      <Highlight code={`<div className="example">Example
-  <button onClick={() => props.history.push("/")}>Go Home</button>
-</div>`} />
-      <div className="example">Example
-        <button onClick={() => props.history.goBack()}>Go Back</button>
-      </div>
       <h2>Documentation</h2>
       <a
         href="https://reacttraining.com/react-router/web/api/Route/route-props"

@@ -97,19 +97,13 @@ a:visited {
   color: rgba(0, 0, 0, 0.646);
 }
 
-.example>div{
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
 select {
   font-size: 1.25rem;
 }
 
-.example {
+.back-button-example {
   margin: 2rem;
-  padding: 3rem;
+  padding: 1rem;
   box-shadow: 10px 10px 10px rgba(211, 211, 211, 0.434);
   border: .125rem solid rgba(211, 211, 211, 0.434);
   border-radius: .5rem;
@@ -117,7 +111,7 @@ select {
   background-color: rgba(211, 211, 211, 0.434);
 }
 
-.example>button{
+.back-button-example>button{
   display: block;
 }
 
