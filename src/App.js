@@ -37,8 +37,7 @@ function App() {
         <Route path="/page3" component={LinkNavLink} />
         <Route path="/page4" component={RouteProps} />
         <Route path="/page5" component={Resources} />
-      
-        {/* <Route path="/favoritedessert/:dessertId" component={FavoriteDessert} /> */}
+        <Route path="/favoritedessert/:dessertId" component={FavoriteDessert} />
       </Switch>
     </div>
   );
