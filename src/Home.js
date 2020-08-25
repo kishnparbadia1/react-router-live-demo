@@ -8,7 +8,6 @@ function Home() {
         <a href="/browser-router">Browser Router</a>
         <a href="/switch-route">Switch & Route</a>
         <a href="/link">Link & NavLink</a>
-        <a href="/route-props">Route props</a>
         <a href='/resources'>Resources</a>
       </div>
     </div>

@@ -14,7 +14,6 @@ function App() {
       <BrowserRouter />
       <SwitchRoute />
       <LinkNavLink />
-      <RouteProps />
       <Resources />
     </div>
   );
