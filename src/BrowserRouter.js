@@ -34,7 +34,7 @@ ReactDOM.render(
           >
             history API
           </a>{" "}
-          whichh is unavailable for legacy browsers.
+          which is unavailable for legacy browsers.
         </li>
         <li>
           Hash Router has no limitation on supported browser and its use cases
