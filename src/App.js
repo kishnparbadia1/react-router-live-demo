@@ -3,8 +3,9 @@ import "./App.css";
 import Home from "./Home";
 import BrowserRouter from "./BrowserRouter";
 import LinkNavLink from './LinkNavLink';
-import SwitchRoute from "./SwitchRoute";
 import Resources from "./Resources";
+import RouteProps from './RouteProps';
+import SwitchRoute from "./SwitchRoute";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <BrowserRouter />
       <SwitchRoute />
       <LinkNavLink />
+      <RouteProps />
       <Resources />
     </div>
   );
