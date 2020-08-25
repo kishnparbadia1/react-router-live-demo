@@ -4,7 +4,6 @@ import Home from "./Home";
 import BrowserRouter from "./BrowserRouter";
 import LinkNavLink from './LinkNavLink';
 import Resources from "./Resources";
-import RouteProps from './RouteProps';
 import SwitchRoute from "./SwitchRoute";
 
 function App() {
