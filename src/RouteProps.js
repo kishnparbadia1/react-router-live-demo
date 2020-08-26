@@ -42,6 +42,7 @@ function RouteProps(props) {
           <option value="5">Apple pie</option>
         </select>
       </div>
+      <button onClick={() => props.history.goForward()}>Go forward!</button>
 
       <h2>History</h2>
       <li>It is used to manipulate browser's history programmatically.</li>

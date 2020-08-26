@@ -1,14 +1,16 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 function Home() {
   return (
     <div className='container'>
       <img src="react-router.jpg" alt="react-router logo" />
       <div className="home-links">
-        <a href="/browser-router">Browser Router</a>
-        <a href="/switch-route">Switch & Route</a>
-        <a href="/link">Link & NavLink</a>
-        <a href='/resources'>Resources</a>
+        <Link to="/browser-router">Browser Router</Link>
+        <Link to="/switch-route">Switch & Route</Link>
+        <Link to="/link">Link & NavLink</Link>
+        <Link to="/route-props">Route Props</Link>
+        <Link to='/resources'>Resources</Link>
       </div>
     </div>
   );
