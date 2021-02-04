@@ -34,10 +34,10 @@ function RouteProps(props) {
           }}
         >
           <option value="0">- - -</option>
-          <option value="1">Chocolate mousse</option>
-          <option value="2">Madeleine</option>
-          <option value="3">Macaroon</option>
-          <option value="4">Cookies</option>
+          <option value="1">Rainbow Cookies</option>
+          <option value="2">Slutty Brownies</option>
+          <option value="3">Ben and Jerry's Half Baked</option>
+          <option value="4">Cake Pops</option>
           <option value="5">Apple pie</option>
         </select>
       </div>
@@ -51,11 +51,7 @@ function RouteProps(props) {
   <button onClick={() => props.history.push("/")}>Go Home</button>
 </div>`}
       />
-      <div className="example-back-button">
-        
-        
-
-      </div>
+      <div className="example-back-button"></div>
 
       <h2>Location</h2>
       <p>
