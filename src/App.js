@@ -14,8 +14,8 @@ function App() {
       <nav className="nav"></nav>
       <Home />
       <BrowserRouter />
-      <LinkNavLink />
       <SwitchRoute />
+      <LinkNavLink />
       <Resources />
       <RouteProps />
       <FavoriteDessert />

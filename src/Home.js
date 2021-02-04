@@ -2,11 +2,9 @@ import React from "react";
 
 function Home() {
   return (
-    <div className='container'>
+    <div className="container">
       <img src="react-router.jpg" alt="react-router logo" />
-      <div className="home-links">
-      
-      </div>
+      <div className="home-links"></div>
     </div>
   );
 }
