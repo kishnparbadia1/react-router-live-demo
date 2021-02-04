@@ -22,7 +22,7 @@ nav a {
 }
 
 nav a:visited {
-  color:white;
+  color: white;
 }
 
 .container {
@@ -30,13 +30,12 @@ nav a:visited {
   flex-direction: column;
   max-width: 48rem;
   margin: auto;
-  margin-bottom: 3rem;;
+  margin-bottom: 3rem;
 }
 
 h1 {
   display: block;
 }
-
 
 img {
   object-fit: contain;
@@ -44,7 +43,7 @@ img {
   height: 100%;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   box-shadow: 10px 10px 5px lightgrey;
 }
 
@@ -57,9 +56,9 @@ img {
 }
 
 .home-links a {
-  padding: .75rem;
-  border: .125rem solid darkgrey;
-  border-radius: .5rem;
+  padding: 0.75rem;
+  border: 0.125rem solid darkgrey;
+  border-radius: 0.5rem;
   text-decoration: none;
 }
 
@@ -67,12 +66,17 @@ img {
   background-color: rgb(136, 187, 189);
 }
 
-p, li, ul, img {
+p,
+li,
+ul,
+img {
   margin-right: 1rem;
   line-height: 2.5rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 2rem 0rem 1rem 0rem;
 }
 
@@ -83,13 +87,13 @@ h1, h2, h3 {
 button {
   margin-top: 2rem;
   padding: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 10rem;
   justify-content: right;
   font-size: 1.25rem;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(136, 187, 189);
 }
 
@@ -105,18 +109,18 @@ select {
   margin: 2rem;
   padding: 1rem;
   box-shadow: 10px 10px 10px rgba(211, 211, 211, 0.434);
-  border: .125rem solid rgba(211, 211, 211, 0.434);
-  border-radius: .5rem;
+  border: 0.125rem solid rgba(211, 211, 211, 0.434);
+  border-radius: 0.5rem;
   font-size: 1.5rem;
   background-color: rgba(211, 211, 211, 0.434);
 }
 
-.example-back-button>button{
+.example-back-button > button {
   display: block;
 }
 
 .favorite-dessert {
-  margin:auto;
+  margin: auto;
   width: 500px;
   max-height: 500px;
 }

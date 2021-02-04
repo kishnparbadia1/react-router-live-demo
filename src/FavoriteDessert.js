@@ -8,7 +8,17 @@ function FavoriteDessert(props) {
     4: "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/02/27/0/FNK_Cake-Pops_H1.jpg.rend.hgtvcom.826.620.suffix/1582853049838.jpeg",
     5: "https://www.chewoutloud.com/wp-content/uploads/2012/12/apple-pie-3.jpg",
   };
-  return <div className="container"></div>;
+  return (
+    <div>
+      <div className="example">
+        <button onClick={() => props.history.goBack()}>Go Back</button>
+      </div>
+      <img
+        src={myFavoriteDessert[props.match.params.dessertId]}
+        className="favorite-dessert"
+      ></img>
+    </div>
+  );
 }
 
 export default FavoriteDessert;

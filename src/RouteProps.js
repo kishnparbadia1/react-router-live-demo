@@ -2,6 +2,7 @@ import React from "react";
 import { Highlight } from "./Highlight";
 
 function RouteProps(props) {
+  console.log("Route props", props);
   return (
     <div className="container">
       <h1>Route Props</h1>
@@ -29,7 +30,7 @@ function RouteProps(props) {
         <select
           onChange={(e) => {
             if (e.target.value > 0) {
-              props.history.push(`/favoritedessert/${e.target.value}`);
+              props.history.push(`/favorite-dessert/${e.target.value}`);
             }
           }}
         >
@@ -40,6 +41,9 @@ function RouteProps(props) {
           <option value="4">Cake Pops</option>
           <option value="5">Apple pie</option>
         </select>
+      </div>
+      <div className="example">
+        <button onClick={() => props.history.goForward()}>Go Forward</button>
       </div>
 
       <h2>History</h2>
