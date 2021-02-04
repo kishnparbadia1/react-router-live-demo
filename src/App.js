@@ -37,7 +37,9 @@ function App() {
       <Route path="/resources" component={Resources} />
       <Route
         path="/route-props/"
-        render={(routeProps) => <RouteProps {...routeProps} />}
+        render={(routeProps) => (
+          <RouteProps whateverProp="prop" {...routeProps} />
+        )}
       />
       <Route
         path="/favorite-dessert/:dessertId"
