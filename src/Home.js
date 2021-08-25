@@ -10,6 +10,7 @@ function Home() {
         <Link to="/browser-router">Browser Router</Link>
         <Link to="/switch-route">Switch Route</Link>
         <Link to="/link-nav-link">Link Nav Link</Link>
+        <Link to="/favorite-dessert/1">Rainbow Cookies</Link>
       </div>
     </div>
   );
