@@ -51,15 +51,11 @@ function SwitchRoute() {
       <h2>Documentation</h2>
       <a
         href="https://reacttraining.com/react-router/web/api/Switch"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         React training - Switch
       </a>
       <a
         href="https://reacttraining.com/react-router/web/api/Route"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         React training - Route
       </a>

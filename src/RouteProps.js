@@ -67,8 +67,6 @@ function RouteProps(props) {
       <h2>Documentation</h2>
       <a
         href="https://reacttraining.com/react-router/web/api/Route/route-props"
-        rel="noopener noreferrer"
-        target="_blank"
       >
         React Training, Route Props
       </a>
