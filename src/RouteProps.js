@@ -15,7 +15,7 @@ function RouteProps(props) {
       <h2>Match</h2>
       <ul>
         <li>
-          It contains info about how a Route's pah matched the current URL
+          It contains info about how a Route's path matched the current URL
         </li>
         <li>
           It contains a very useful property (among others) `params` that parses
@@ -29,7 +29,7 @@ function RouteProps(props) {
         <select
           onChange={(e) => {
             if (e.target.value > 0) {
-              props.history.push(`/favoritedessert/${e.target.value}`);
+              props.history.push(`/favorite-dessert/${e.target.value}`);
             }
           }}
         >

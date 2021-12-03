@@ -1,7 +1,8 @@
 import React from "react";
 import { Highlight } from "./Highlight";
 
-function BrowserRouter() {
+function BrowserRouter(props) {
+  console.log(props);
   return (
     <div className="container">
       <h1>Browser Router</h1>
