@@ -14,7 +14,6 @@ function BrowserRouter() {
       </ul>
       <Highlight
         code={`import { BrowserRouter } from "react-router-dom";
-
 ReactDOM.render(
     // all route sensitive code is wrapped into BrowserRouter
   <BrowserRouter>
@@ -29,8 +28,6 @@ ReactDOM.render(
           Browser Router uses{" "}
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/History_API"
-            target="_blank"
-            rel="noopener noreferrer"
           >
             history API
           </a>{" "}
@@ -44,8 +41,6 @@ ReactDOM.render(
       <h2>Documentation</h2>
       <a
         href="https://reacttraining.com/react-router/web/api/BrowserRouter"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         React training - Browser Router
       </a>
